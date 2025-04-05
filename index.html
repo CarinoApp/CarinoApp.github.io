@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cariño App - Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #6d28d9;
+            --primary-light: #ede9fe;
+            --text-color: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --background-alt: #f9fafb;
+            --border-color: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .app-name {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .app-description {
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex: 1;
+        }
+
+        nav {
+            width: 250px;
+            background-color: var(--background-alt);
+            padding: 2rem 1rem;
+            border-right: 1px solid var(--border-color);
+        }
+
+        nav ul {
+            list-style: none;
+            position: sticky;
+            top: 2rem;
+        }
+
+        nav li {
+            margin-bottom: 0.75rem;
+        }
+
+        nav a {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: var(--text-color);
+            text-decoration: none;
+            border-radius: 0.25rem;
+            transition: all 0.2s ease;
+        }
+
+        nav a:hover {
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .policy-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .effective-date {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+            scroll-margin-top: 2rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            color: var(--primary-color);
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul, ol {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: var(--background-alt);
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-light);
+        }
+
+        .contact-email {
+            margin-top: 1rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+
+            nav {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                padding: 1rem;
+            }
+
+            nav ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                position: static;
+            }
+
+            nav li {
+                margin-bottom: 0;
+            }
+
+            nav a {
+                padding: 0.5rem 0.75rem;
+                font-size: 0.9rem;
+            }
+
+            main {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-name">Cariño App</div>
+            <div class="app-description">Privacy Policy</div>
+        </header>
+
+        <div class="content-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#information-collection">Information Collection</a></li>
+                    <li><a href="#cloudkit">CloudKit Usage</a></li>
+                    <li><a href="#permissions">App Permissions</a></li>
+                    <li><a href="#third-party">Third-Party Services</a></li>
+                    <li><a href="#data-retention">Data Retention</a></li>
+                    <li><a href="#childrens-privacy">Children's Privacy</a></li>
+                    <li><a href="#changes">Policy Changes</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <div class="policy-header">
+                    <h1>Privacy Policy</h1>
+                    <div class="effective-date">Effective Date: April 5, 2025</div>
+                </div>
+
+                <section id="introduction">
+                    <h2>Introduction</h2>
+                    <p>Sofia Sandoval ("we," "our," or "us") respects your privacy and is committed to protecting it. This Privacy Policy explains our practices regarding data when you use our Cariño App mobile application ("App").</p>
+                    <p>The Cariño App is designed with your privacy as a priority. We do not collect, store, or process any personal data on our servers. All your data remains on your device and in your personal iCloud account through Apple's CloudKit.</p>
+                </section>
+
+                <section id="information-collection">
+                    <h2>Information Collection and Use</h2>
+                    <h3>We Do Not Collect Personal Data</h3>
+                    <p>The Cariño App does not collect, transmit, or store any of your personal information on our servers. We do not have access to:</p>
+                    <ul>
+                        <li>Your name, email address, or contact information</li>
+                        <li>Your location data</li>
+                        <li>Your device identifiers or IP address</li>
+                        <li>Any content you create within the app</li>
+                        <li>Your usage patterns or behavior</li>
+                    </ul>
+                </section>
+
+                <section id="cloudkit">
+                    <h2>CloudKit Usage</h2>
+                    <p>Our App uses Apple's CloudKit framework, which means:</p>
+                    <ol>
+                        <li><strong>Private Storage</strong>: Any data you create in the App is stored only in your personal iCloud account's private database, not on our servers</li>
+                        <li><strong>No Developer Access</strong>: We cannot access, view, or retrieve any information stored in your private CloudKit database</li>
+                        <li><strong>Apple's Control</strong>: The storage and synchronization of your data is handled entirely by Apple according to their privacy practices</li>
+                        <li><strong>Your Control</strong>: You maintain complete control of your data through your Apple ID and iCloud settings</li>
+                    </ol>
+                </section>
+
+                <section id="permissions">
+                    <h2>Required App Permissions</h2>
+                    <p>To provide basic functionality, our App may request the following permissions:</p>
+                    <ul>
+                        <li>iCloud access (to enable data synchronization across your devices)</li>
+                    </ul>
+                    <p>We do not use these permissions to collect any data from you.</p>
+                </section>
+
+                <section id="third-party">
+                    <h2>Third-Party Services</h2>
+                    <p>Our App does not integrate with third-party analytics, advertising, or data collection services. We do not share any data with third parties because we do not collect any data to share.</p>
+                </section>
+
+                <section id="data-retention">
+                    <h2>Data Retention and Deletion</h2>
+                    <p>Since all your data is stored in your personal iCloud account:</p>
+                    <ul>
+                        <li>Data retention is controlled by you through your iCloud settings</li>
+                        <li>When you delete the App, your data remains in your iCloud account until you manually delete it</li>
+                        <li>To completely remove all App data, you can delete it from your iCloud storage through your device settings</li>
+                    </ul>
+                </section>
+
+                <section id="childrens-privacy">
+                    <h2>Children's Privacy</h2>
+                    <p>Our App is appropriate for users of all ages. Since we do not collect any personal information, there are no special provisions needed regarding children's data.</p>
+                </section>
+
+                <section id="changes">
+                    <h2>Changes to This Privacy Policy</h2>
+                    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top of this Privacy Policy.</p>
+                </section>
+
+                <section id="contact">
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+                    <p>Email: <a href="mailto:tocareforapp@gmail.com">tocareforapp@gmail.com</a></p>
+                </section>
+
+                <hr style="margin: 2rem 0; border: none; border-top: 1px solid var(--border-color);">
+                <p>By using the Cariño App, you acknowledge that you have read and understand this Privacy Policy.</p>
+            </main>
+        </div>
+
+        <footer>
+            <div>&copy; 2025 Cariño App. All rights reserved.</div>
+            <div class="contact-email">
+                <a href="mailto:tocareforapp@gmail.com">tocareforapp@gmail.com</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
