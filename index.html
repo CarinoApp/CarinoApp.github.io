@@ -6,16 +6,18 @@
     <title>Cariño App - Privacy Policy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #6d28d9;
-            --primary-light: #ede9fe;
-            --text-color: #1f2937;
-            --text-light: #6b7280;
+            --primary-color: #ff6b9d;
+            --primary-light: #ffd1e0;
+            --primary-lighter: #ffe6ee;
+            --primary-dark: #e84c84;
+            --text-color: #4a4a4a;
+            --text-light: #767676;
             --background: #ffffff;
-            --background-alt: #f9fafb;
-            --border-color: #e5e7eb;
+            --background-alt: #fff5f8;
+            --border-color: #ffd1e0;
         }
 
         * {
@@ -25,7 +27,7 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: var(--text-color);
             background-color: var(--background);
@@ -42,11 +44,26 @@
             color: white;
             padding: 1.5rem;
             text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(255, 107, 157, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .app-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+            display: block;
+            border-radius: 20px;
         }
 
         .app-name {
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
         }
@@ -54,11 +71,13 @@
         .app-description {
             font-weight: 300;
             opacity: 0.9;
+            font-size: 1.2rem;
         }
 
         .content-wrapper {
             display: flex;
             flex: 1;
+            background-color: var(--background);
         }
 
         nav {
@@ -83,13 +102,14 @@
             padding: 0.5rem 1rem;
             color: var(--text-color);
             text-decoration: none;
-            border-radius: 0.25rem;
+            border-radius: 0.5rem;
             transition: all 0.2s ease;
+            font-size: 0.95rem;
         }
 
         nav a:hover {
-            background-color: var(--primary-light);
-            color: var(--primary-color);
+            background-color: var(--primary-lighter);
+            color: var(--primary-dark);
         }
 
         main {
@@ -103,6 +123,7 @@
             margin-bottom: 2rem;
             padding-bottom: 1rem;
             border-bottom: 1px solid var(--border-color);
+            text-align: center;
         }
 
         .effective-date {
@@ -114,6 +135,10 @@
         section {
             margin-bottom: 2.5rem;
             scroll-margin-top: 2rem;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 2px 8px rgba(255, 107, 157, 0.1);
         }
 
         h1 {
@@ -136,6 +161,7 @@
             font-weight: 600;
             margin-bottom: 0.75rem;
             margin-top: 1.5rem;
+            color: var(--primary-dark);
         }
 
         p {
@@ -152,7 +178,7 @@
         }
 
         a {
-            color: var(--primary-color);
+            color: var(--primary-dark);
             text-decoration: none;
         }
 
@@ -171,6 +197,33 @@
         .contact-email {
             margin-top: 1rem;
             font-weight: 500;
+        }
+
+        .heart-decoration {
+            position: absolute;
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        .heart-1 {
+            top: 10%;
+            left: 5%;
+            transform: rotate(-10deg);
+            font-size: 3rem;
+        }
+
+        .heart-2 {
+            top: 30%;
+            right: 10%;
+            transform: rotate(15deg);
+            font-size: 2.5rem;
+        }
+
+        .heart-3 {
+            bottom: 20%;
+            left: 15%;
+            transform: rotate(5deg);
+            font-size: 2rem;
         }
 
         @media (max-width: 768px) {
@@ -204,14 +257,24 @@
             main {
                 padding: 1.5rem;
             }
+
+            section {
+                padding: 1.25rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="app-name">Cariño App</div>
-            <div class="app-description">Privacy Policy</div>
+            <div class="heart-decoration heart-1">❤️</div>
+            <div class="heart-decoration heart-2">❤️</div>
+            <div class="heart-decoration heart-3">❤️</div>
+            <div class="header-content">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CarinoAppIcon.jpg-eRIdI4cDBaxJu0lYWb9uUCT39TfBwc.jpeg" alt="Cariño App Logo" class="app-logo">
+                <div class="app-name">Cariño App</div>
+                <div class="app-description">Privacy Policy</div>
+            </div>
         </header>
 
         <div class="content-wrapper">
@@ -305,8 +368,9 @@
                     <p>Email: <a href="mailto:tocareforapp@gmail.com">tocareforapp@gmail.com</a></p>
                 </section>
 
-                <hr style="margin: 2rem 0; border: none; border-top: 1px solid var(--border-color);">
-                <p>By using the Cariño App, you acknowledge that you have read and understand this Privacy Policy.</p>
+                <div style="margin: 2rem 0; padding: 1.5rem; border-radius: 1rem; background-color: var(--primary-lighter); text-align: center;">
+                    <p>By using the Cariño App, you acknowledge that you have read and understand this Privacy Policy.</p>
+                </div>
             </main>
         </div>
 
